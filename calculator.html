@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Scientific Calculator | Dessalegn Birhanie</title>
+
+<!-- Portfolio CSS -->
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/animations.css">
+<link rel="stylesheet" href="../../css/responsive.css">
+<link rel="stylesheet" href="../../css/project-detail.css">
+
+<!-- Calculator Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- Calculator JS -->
+<script src="../../js/calculator.js" defer></script>
+
+<!-- Modern Portfolio-Aligned CSS -->
+<style>
+:root {
+  --primary: #4f46e5;
+  --accent: #6366f1;
+  --dark-bg: #121212;
+  --light-bg: #f9f9f9;
+  --card-bg: #1f1f2f;
+  --card-light: #fff;
+  --text-light: #fff;
+  --text-dark: #111;
+  --btn-hover: #7c3aed;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background: inherit; /* use portfolio background */
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.calculator-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.calculator {
+  background: var(--card-bg);
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  width: 400px;
+  max-width: 100%;
+  transition:0.3s;
+  text-align: center;
+}
+
+body.light .calculator {
+  background: var(--card-light);
+  color: var(--text-dark);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.calculator h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin: 0 auto 20px auto;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 15px;
+  background: rgba(255,255,255,0.05);
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+body.light input {
+  background: #eee;
+  color: var(--text-dark);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  background: var(--primary);
+  color: #fff;
+}
+
+button:hover {
+  background: var(--btn-hover);
+  transform: scale(1.05);
+}
+
+.result {
+  background: black;
+  color: var(--text-light);
+  border-radius: 12px;
+  min-height: 60px;
+  padding: 10px;
+  font-size: 15px;
+  overflow-x: auto;
+  margin-bottom: 15px;
+}
+
+body.light .result {
+  background: #eee;
+  color: var(--text-dark);
+}
+
+#graph {
+  height: 300px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-btn:hover { background: var(--primary); }
+
+h2 { font-size: 1.2rem; margin-top: 20px; text-align: center; color: var(--primary); }
+
+body.light h2 { color: var(--accent); }
+
+</style>
+</head>
+<body>
+
+<!-- Portfolio Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="../../index.html" class="logo">
+      <span class="logo-text">Dessalegn</span>
+      <span class="logo-accent">Birhanie</span>
+    </a>
+    <a href="../../index.html#projects" class="back-btn">← Back to Portfolio</a>
+  </div>
+</nav>
+
+<section class="project-detail">
+<div class="container">
+
+  <div class="project-header">
+    <h1>Advanced Scientific Calculator 🧮</h1>
+    <p class="project-role">Computer Science Student</p>
+  </div>
+
+  
+  <div class="calculator-section">
+    <div class="calculator">
+        <h1>Ultimate Scientific Calculator</h1>
+      <img src="C:\Users\hp\OneDrive\Pictures\lave.jpg" alt="Developer" class="user-image">
+      <input id="display" placeholder="Enter expression (e.g. sin(pi/2)+3i, diff(x^2,x))">
+      <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="backspace()">⌫</button>
+        <button onclick="insert('(')">(</button>
+        <button onclick="insert(')')">)</button>
+        <button onclick="insert('+')">+</button>
+        <button onclick="insert('-')">−</button>
+        <button onclick="insert('*')">×</button>
+        <button onclick="insert('/')">÷</button>
+        <button onclick="insert('sin(')">sin</button>
+        <button onclick="insert('cos(')">cos</button>
+        <button onclick="insert('tan(')">tan</button>
+        <button onclick="insert('log(')">log</button>
+        <button onclick="insert('exp(')">exp</button>
+        <button onclick="insert('sqrt(')">√</button>
+        <button onclick="insert('i')">i</button>
+        <button onclick="insert('^')">^</button>
+        <button onclick="insert('diff(')">d/dx</button>
+        <button onclick="insert('integrate(')">∫</button>
+        <button onclick="insert('limit(')">lim</button>
+        <button onclick="calculate()">=</button>
+      </div>
+
+      <div class="result" id="result"></div>
+
+      <h2>Graph Plotter</h2>
+      <input id="graphInput" placeholder="Enter function of x (e.g. sin(x), x^2)">
+      <button onclick="plotGraph()">Plot</button>
+      <div id="graph"></div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2025 Dessalegn Birhanie Gebrekidan. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dessalegn Birhanie Gebrekidan - Computer Science Student & Developer Portfolio">
+    <meta name="keywords" content="Dessalegn Birhanie, Computer Science, Web Developer, University of Gondar, Ethiopia">
+    <meta name="author" content="Dessalegn Birhanie Gebrekidan">
+    <title>Dessalegn Birhanie | CS Student & Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="toggle-controls">
+        <button id="theme-toggle" class="toggle-btn" aria-label="Toggle Dark/Light Mode">
+            <span class="icon">🌙</span>
+        </button>
+        <button id="color-theme-toggle" class="toggle-btn" aria-label="Change Color Theme">
+            <span class="icon">🎨</span>
+        </button>
+        <button id="animation-speed-toggle" class="toggle-btn" aria-label="Animation Speed">
+            <span class="icon">⚡</span>
+        </button>
+        <button id="font-size-toggle" class="toggle-btn" aria-label="Font Size">
+            <span class="icon">Aa</span>
+        </button>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Dessalegn</span>
+                <span class="logo-accent">Birhanie</span>
+            </a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Dessalegn Birhanie</span>
+                </h1>
+                <p class="hero-subtitle">Computer Science Student | Developer | Problem Solver</p>
+                <p class="hero-description">
+                    3rd-year CS student at University of Gondar, Ethiopia. Passionate about algorithms, 
+                    OOP, and building creative web solutions that make a difference.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/profile.jpg" alt="Dessalegn Birhanie Gebrekidan" id="profile-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="floating-info">
+                    <div class="info-card">
+                        <span class="info-icon">🎓</span>
+                        <span class="info-text">UoG, Ethiopia in 2026</span>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">💻</span>
+                        <span class="info-text">CS Student</span>
+                    </div>
+                    <div class="info-card">
+    <span class="info-icon">⛪</span>  
+    <span class="info-text">Deacon</span>
+</div>
+
+
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm <strong>Dessalegn Birhanie Gebrekidan</strong>, a passionate 21-year-old Computer Science student 
+                        currently in my 3rd year at the <a href="https://www.uog.edu.et/" target="_blank" rel="noopener" class="university-link">University of Gondar, Ethiopia</a>.
+                    </p>
+                    <p>
+                        My journey in tech is driven by curiosity and a deep love for problem-solving. I specializing in 
+                        <strong>algorithms</strong>, <strong>object-oriented programming</strong>, and <strong>web development</strong>. 
+                        Every line of code I write is a step toward building creative, impactful solutions.
+                    </p>
+                    <p>
+                        Beyond coding, I believe in continuous learning and sharing knowledge. My goal is to contribute to 
+                        innovative projects that solve real-world problems and    As a deacon in my church, I also strive to serve my community, uphold strong values, and lead by example both in faith and in my professional life.
+                    </p>
+                </div>
+
+                <div class="journey-timeline">
+                    <h3>My Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>2025 - Present</h4>
+                                <p>3rd Year Computer Science Student Learning web Development</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>2024</h4>
+                                <p>Started learning data structure, algorithms & OOP</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>2023</h4>
+                                <p>I Began University Journey in Computer Science</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learning-resources">
+                <h3>What I'm Learning From</h3>
+                <div class="resource-cards">
+                    <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener" class="resource-card">
+                        <span class="resource-icon"><img src="images/web.jpg" alt="imges of web" width="100" height="70"></span>
+                        <h4>Web Development</h4>
+                        <p>HTML, CSS, JavaScript - Building modern web applications</p>
+                        <span class="learn-more">Learn with me →</span>
+                    </a>
+                    <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" rel="noopener" class="resource-card">
+                        <span class="resource-icon">📊</span>
+                        <h4>Data Structures</h4>
+                        <p>Arrays, Trees, Graphs - Foundation of efficient algorithms</p>
+                        <span class="learn-more">Learn with me →</span>
+                    </a>
+                    <a href="https://www.w3schools.com/java/java_oop.asp" target="_blank" rel="noopener" class="resource-card">
+                        <span class="resource-icon">🎯</span>
+                        <h4>OOP (Object-Oriented Programming)</h4>
+                        <p>Classes, Inheritance, Polymorphism - Writing clean code</p>
+                        <span class="learn-more">Learn with me →</span>
+                    </a>
+                    <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank" rel="noopener" class="resource-card">
+                        <span class="resource-icon">⚙️</span>
+                        <h4>Algorithms</h4>
+                        <p>Sorting, Searching, Dynamic Programming - Problem solving</p>
+                        <span class="learn-more">Learn with me →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Technologies and tools I work with - click to explore resources</p>
+            
+            <div class="skills-grid">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/html5 (3).png" alt="HTML5"></div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <p>50% Proficiency</p>
+                </a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/css3 (1).png" alt="CSS3"></div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <p>45% Proficiency</p>
+                </a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/js (1).png" alt="JavaScript"></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <p>45% Proficiency</p>
+                </a>
+
+                <a href="https://www.oracle.com/java/technologies/javase-documentation.html" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/java (1).jpg" alt="Java"></div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <p>50% Proficiency</p>
+                </a>
+
+                <a href="https://www.w3schools.com/python/" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/py (1).jpg" alt="Python"></div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <p>40% Proficiency</p>
+                </a>
+
+                <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/sq (1).png" alt="SQL"></div>
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <p>30% Proficiency</p>
+                </a>
+
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/t (1).png" alt="Git & GitHub"></div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <p>35% Proficiency</p>
+                </a>
+
+                <a href="https://www.w3schools.com/whatis/whatis_responsive.asp" target="_blank" rel="noopener" class="skill-card">
+                    <div class="skill-icon"><img src="images/po.jpg" alt="Responsive Design" width="50" height="50"></div>
+                    <h3>Responsive Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <p>20% Proficiency</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A showcase of my work and creative solutions</p>
+            
+            <div class="projects-grid">
+                <article class="project-card" data-project="vehicle-rental">
+                    <div class="project-image">
+                        <img src="images/projects/vehicle-rental.png" alt="Smart Vehicle Rental System">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="viewProject('vehicle-rental')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Vehicle Rental System 🚗</h3>
+                        <p class="project-role">Full-Stack Developer</p>
+                        <p class="project-description">Java + OOP project for renting and managing vehicles with advanced booking features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">Full-Stack</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="calculator">
+                    <div class="project-image">
+                        <img src="images/projects/calculator.png" alt="Advanced Scientific Calculator">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="viewProject('calculator')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced Scientific Calculator 🧮</h3>
+                        <p class="project-role">Front-End Developer</p>
+                        <p class="project-description">Responsive calculator with multiple operation modes and advanced scientific functions.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                
+
+                
+
+                <article class="project-card" data-project="weather-dashboard">
+                    <div class="project-image">
+                        <img src="images/projects/weather-dashboard.png" alt="Weather Forecast Dashboard">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="viewProject('weather-dashboard')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Forecast Dashboard 🌤️</h3>
+                        <p class="project-role">Web Developer</p>
+                        <p class="project-description">Clean weather dashboard ready for API integration with beautiful UI.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">API Ready</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about my work and journey</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are you currently studying?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I'm a 3rd-year Computer Science student at the University of Gondar, Ethiopia. My focus areas include algorithms, data structures, object-oriented programming and web development.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What programming languages do you know?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I'm proficient in HTML, CSS, JavaScript, Java, Python, and SQL. I'm constantly learning new technologies and expanding my skill set.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What kind of projects do you work on?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I work on a variety of projects including web applications,mini mobile app designs and UI/UX projects. Check out my Featured Projects section above!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are you available for freelance work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I'm open to freelance opportunities, collaborations, and interesting projects. Feel free to reach out through the contact form below.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are your career goals?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>My goal is to become a skilled software engineer who builds impactful solutions. I aim to contribute to innovative projects, continue learning, and eventually mentor others in the tech community.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How did you get into programming?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I discovered my passion for programming in university. The ability to create solutions from code and solve real-world problems fascinated me, and I've been hooked ever since!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What tools and technologies do you use?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I use VS Code for development, Git/GitHub for version control, and various frameworks and libraries for web development. I'm also know familiar database management tools and design software.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you have experience with team projects?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I've worked on collaborative projects in my university, which has taught me valuable skills in communication, code collaboration, and project management.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What inspires your work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I'm inspired by the potential of technology to solve real problems and improve people's lives. Every project is an opportunity to learn something new and create something meaningful.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I work with you?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply fill out the contact form below or email me directly at abera3573@gmail.com. I'm always excited to discuss new opportunities and collaborations!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's your development process like?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I follow a structured approach: understanding requirements, planning the architecture, iterative development with testing, and continuous refinement based on feedback.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon-wrapper">
+                            <span class="info-icon-contact"><img src="images/im.jpg" alt="email icon" width="20" height="20"></span>
+                        </div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <a href="mailto:abera3573@gmail.com">abera3573@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon-wrapper">
+                            <span class="info-icon-contact">📱</span>
+                        </div>
+                        <div class="info-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+251934491951">+251 934 491 951</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon-wrapper">
+                            <span class="info-icon-contact"><img src="images/loc.jpg" alt="Location image" width="20" height="20"></span>
+                        </div>
+                        <div class="info-details">
+                            <h3>Location</h3>
+                            <p>Gondar, Ethiopia</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon-wrapper">
+                            <span class="info-icon-contact"><img src="images/log.png" alt="uog logo" width="20" height="20"></span>
+                        </div>
+                        <div class="info-details">
+                            <h3>University</h3>
+                            <a href="https://www.uog.edu.et/" target="_blank" rel="noopener">University of Gondar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form" 
+                action="https://formspree.io/f/movpqaen"
+                 method="POST">
+                 
+                    <div class="form-group">
+                        <label for="name">Your Name</label> 
+                        <input type="text" id="name" name="name" required placeholder="Jerry Birhanie">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Jerry@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry(what is your project about?)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or inquiry..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;">Sending...</span>
+                    </button>
+
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dessalegn Birhanie</h3>
+                    <p>Computer Science Student & Developer</p>
+                    <p class="footer-tagline">Building the future, one line of code at a time.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Deacon Dessalegn Birhanie Gebrekidan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/toggles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/faq.js"></script>
